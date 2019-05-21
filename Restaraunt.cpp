@@ -17,7 +17,7 @@ const int FRIES = 2;
 const int SODA = 3;
 const int meal = HAMBURGER + FRIES + SODA;
 int missingItem = 0;
-const int LOOPS = 100;
+int LOOPS;
 int sum = 0;
 volatile bool CheffExhausted = false;
 // ******************* //
@@ -31,6 +31,12 @@ void get(vector<int> &CustomerPlate);
 int main(int argc, char** argv)
 {
     
+    if(argc != 2)
+    {
+        cout << "Wrong number of arguments entered!" << endl;
+        exit(1);
+    }
+    LOOPS = stoi(argv[1]);
     
     thread Chef(producer);
     thread Customer1(consumer, HAMBURGER);
