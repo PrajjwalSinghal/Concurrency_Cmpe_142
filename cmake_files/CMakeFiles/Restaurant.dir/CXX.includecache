@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/prajjwalsinghal/desktop/Concurrency_Cmpe_142/Restaraunt.cpp
+iostream
+-
+tuple
+-
+thread
+-
+mutex
+-
+algorithm
+-
+future
+-
+random
+-
+condition_variable
+-
+
